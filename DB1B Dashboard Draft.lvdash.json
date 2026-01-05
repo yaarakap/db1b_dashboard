@@ -560,14 +560,19 @@
               "itemsPerPage": 200,
               "paginationSize": "default",
               "condensed": true,
-              "withRowNumber": false
+              "withRowNumber": false,
+              "style": {
+                "fontColor": {
+                  "light": "#14111C"
+                }
+              }
             }
           },
           "position": {
             "x": 0,
             "y": 0,
             "width": 6,
-            "height": 6
+            "height": 10
           }
         }
       ],
@@ -617,7 +622,7 @@
           },
           "position": {
             "x": 0,
-            "y": 0,
+            "y": 6,
             "width": 1,
             "height": 2
           }
@@ -652,6 +657,141 @@
                   {
                     "fieldName": "NonStop",
                     "queryName": "dashboards/01f0ea6f91bf11a2a4e594a8d7f4203a/datasets/01f0ea6f98e516c8923c686bc8ac5f15_NonStop"
+                  }
+                ]
+              },
+              "frame": {
+                "showTitle": true
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 8,
+            "width": 1,
+            "height": 2
+          }
+        },
+        {
+          "widget": {
+            "name": "f8808c85",
+            "queries": [
+              {
+                "name": "dashboards/01f0ea6f91bf11a2a4e594a8d7f4203a/datasets/01f0ea6f98e516c8923c686bc8ac5f15_Origin",
+                "query": {
+                  "datasetName": "c0aacb32",
+                  "fields": [
+                    {
+                      "name": "Origin",
+                      "expression": "`Origin`"
+                    },
+                    {
+                      "name": "Origin_associativity",
+                      "expression": "COUNT_IF(`associative_filter_predicate_group`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "widgetType": "filter-multi-select",
+              "encodings": {
+                "fields": [
+                  {
+                    "fieldName": "Origin",
+                    "queryName": "dashboards/01f0ea6f91bf11a2a4e594a8d7f4203a/datasets/01f0ea6f98e516c8923c686bc8ac5f15_Origin"
+                  }
+                ]
+              },
+              "frame": {
+                "showTitle": true
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 4,
+            "width": 1,
+            "height": 2
+          }
+        },
+        {
+          "widget": {
+            "name": "9db83e1a",
+            "queries": [
+              {
+                "name": "dashboards/01f0ea6f91bf11a2a4e594a8d7f4203a/datasets/01f0ea6f98e516c8923c686bc8ac5f15_Year",
+                "query": {
+                  "datasetName": "c0aacb32",
+                  "fields": [
+                    {
+                      "name": "Year",
+                      "expression": "`Year`"
+                    },
+                    {
+                      "name": "Year_associativity",
+                      "expression": "COUNT_IF(`associative_filter_predicate_group`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "widgetType": "filter-multi-select",
+              "encodings": {
+                "fields": [
+                  {
+                    "fieldName": "Year",
+                    "queryName": "dashboards/01f0ea6f91bf11a2a4e594a8d7f4203a/datasets/01f0ea6f98e516c8923c686bc8ac5f15_Year"
+                  }
+                ]
+              },
+              "frame": {
+                "showTitle": true
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 2
+          }
+        },
+        {
+          "widget": {
+            "name": "a5804af8",
+            "queries": [
+              {
+                "name": "dashboards/01f0ea6f91bf11a2a4e594a8d7f4203a/datasets/01f0ea6f98e516c8923c686bc8ac5f15_Quarter",
+                "query": {
+                  "datasetName": "c0aacb32",
+                  "fields": [
+                    {
+                      "name": "Quarter",
+                      "expression": "`Quarter`"
+                    },
+                    {
+                      "name": "Quarter_associativity",
+                      "expression": "COUNT_IF(`associative_filter_predicate_group`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "widgetType": "filter-multi-select",
+              "encodings": {
+                "fields": [
+                  {
+                    "fieldName": "Quarter",
+                    "queryName": "dashboards/01f0ea6f91bf11a2a4e594a8d7f4203a/datasets/01f0ea6f98e516c8923c686bc8ac5f15_Quarter"
                   }
                 ]
               },
